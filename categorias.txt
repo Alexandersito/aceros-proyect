@@ -1,0 +1,45 @@
+PRODUCTOS
+linea caliente (32)
+ cocinas industriales
+ cocina electrica
+ cocina con horno
+ cocina chifera
+ cocina mixta
+ hornos
+ parrilleras
+ carritos
+ freidora
+ tabolas
+ 
+linea fria (16)
+ exhibidora
+ camara
+ mesa refrigerada
+ cuarto de refrigeracion
+ motor extractor de aire
+ 
+carpinteria metalica (28)
+ mesa de trabajo central
+ mesa de trabajo mural
+ mesa con repisa
+ mesa de apoyo
+ lavadero
+ lavadero con escurridor
+ lavamanos
+ estante
+ estanteria
+ coche para transportar ropa
+ campana
+ repisa
+ porta bandejas
+ 
+otros productos (6)
+accesorios (4)
+
+EQUIPOS INDUSTRIALES
+ Panaderia y reposteria (6)
+ Industria lactea (14)
+ Industria cafetera y cacao (12)
+ Produccion de alimentos (6)
+ Linea carnica (6)
+ Linea agro-industrial (14)
