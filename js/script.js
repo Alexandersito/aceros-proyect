@@ -1,19 +1,18 @@
-document.getElementById('menu-icon').addEventListener('click', function () {
-    var headerMenu = document.getElementById('header-menu');
+$(document).ready(function () {
+    var alturaBloque = $(".bloque").outerHeight(true);
 
-    if (headerMenu.classList.contains('show')) {
-        headerMenu.style.opacity = '0';
-        headerMenu.style.transform = 'translateY(-100%)';
+    $("#menu-icon").click(function () {
+        $("img").toggleClass("logo-anime-img");
+        $("h1").toggleClass("logo-anime-h1");
 
-        setTimeout(function () {
-            headerMenu.classList.remove('show');
-        }, 300); // Tiempo de espera para que se complete la animación (en milisegundos)
-    } else {
-        headerMenu.classList.add('show');
+        var $contenedor = $(".header-menu");
 
-        setTimeout(function () {
-            headerMenu.style.opacity = '1';
-            headerMenu.style.transform = 'translateY(0)';
-        }, 0); // Tiempo de espera antes de aplicar la animación (en milisegundos)
-    }
+        if ($contenedor.height() === 0) {
+            $contenedor.height(alturaBloque);
+            $(".bloque").slideDown();
+        } else {
+            $contenedor.height(0);
+            $(".bloque").slideUp();
+        }
+    });
 });

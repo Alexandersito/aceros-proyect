@@ -71,6 +71,8 @@ body {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .logo::before {
@@ -93,12 +95,12 @@ body {
     transition: transform 0.3s;
 }
 
-.logo:hover img {
-    transform: translateX(-10px);
+.logo-anime-img {
+    transform: translateX(-5px);
 }
 
-.logo:hover h1 {
-    transform: translateX(30px);
+.logo-anime-h1 {
+    transform: translateX(15px);
 }
 
 .logo img {
@@ -144,6 +146,18 @@ body {
     left: 0;
 }
 
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.bloque {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
 
 /*=================================================*/
 /*CARRUSEL*/
@@ -372,14 +386,6 @@ body {
         transition: transform 0.3s;
     }
 
-    .logo:hover img {
-        transform: translateX(-5px);
-    }
-
-    .logo:hover h1 {
-        transform: translateX(10px);
-    }
-
     .logo img {
         width: 50px;
     }
@@ -403,18 +409,26 @@ body {
     }
 
     .header-menu {
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease, transform 0.3s ease;
-        transform: translateY(-100%);
+        overflow: hidden;
+        height: 0;
+        transition: height 0.1s linear;
     }
 
-    .header-menu.show {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
+    .bloque {
+        display: none;
+        width: 100%;
     }
 
+    .header-menu {
+        display: flex;
+        align-items: center;
+    }
 
+    .bloque {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
 
+    }
 }
