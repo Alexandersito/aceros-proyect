@@ -30,3 +30,18 @@ $(document).ready(function () {
     });
 });
 
+//=======================================================================================================================================
+//EFECTO SCROLL AUTOMATICO
+//=======================================================================================================================================
+function scrollToSection(selector) {
+    const section = document.querySelector(selector);
+    const scrollAdjust = -10;
+
+    if (section) {
+        const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({ top: sectionTop + scrollAdjust, behavior: 'smooth' });
+    }
+}
+
+
+

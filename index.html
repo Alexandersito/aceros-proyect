@@ -45,6 +45,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap" rel="stylesheet">
     <!-- LATO -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <!-- MONTSERRAT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,900&display=swap"
+        rel="stylesheet">
+    <!-- SIGMAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
 
     <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -82,10 +87,14 @@
 
             <div id="header-menu" class="header-menu">
                 <div class="bloque m-0 p-0">
-                    <button class="letra-lato">Productos</button>
+
+                    <button class="letra-lato btn-productos"
+                        onclick="scrollToSection('.seccion-productos')">Productos</button>
+
                     <button class="letra-lato">Equipos Industriales</button>
                     <button class="letra-lato">Nosotros</button>
                     <button class="letra-lato">Contacto</button>
+
                 </div>
             </div>
 
@@ -96,9 +105,9 @@
     <!--CAROSUEL-->
     <!--=======================================================================================================================================-->
     <div class="container mt-2">
-        <div class="container-fluid " style="border: 4px solid #FB5B22; /* Color naranja oscuro */
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(251, 91, 34, 0.5);">
+        <div class="container-fluid " style="border: 4px solid #ffffff; /* Color naranja oscuro */
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(55, 55, 55, 0.385);">
             <div class="owl-carousel">
 
                 <div class="item-grid ">
@@ -177,6 +186,70 @@
 
             </div>
         </div>
+    </div>
+
+    <!--=======================================================================================================================================-->
+    <!--PRODUCTOS - SECCION-->
+    <!--=======================================================================================================================================-->
+    <div class="container-fluid mt-4 seccion-productos">
+        <div class="container">
+            <div class="recorte">
+                <h2 class="letra-sigmar absolute titulo-seccion">Productos</h2>
+            </div>
+            <div class="sombra"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <div class="container">
+
+            <div class="contenedor-tarjetas">
+                <div class="tarjeta">
+                    <img src="img/producto-demo.png" alt="Descripción de la imagen" class="img-fluid absolute centrado">
+                    <button class="button hot-line">
+                        <span class="icon"><i class="fas fa-thermometer-three-quarters"></i></span>
+                        <span class="text letra-lato">Línea caliente</span>
+                    </button>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="img/producto-demo.png" alt="Descripción de la imagen" class="img-fluid absolute centrado">
+                    <button class="button cold-line">
+                        <span class="icon"><i class="fas fa-snowflake"></i></span>
+                        <span class="text letra-lato">Línea fría</span>
+                    </button>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="img/img-hd-1.png" alt="Descripción de la imagen" class="img-fluid absolute centrado">
+                    <button class="button metal-carpentry">
+                        <span class="icon"><i class="fas fa-tools"></i></span>
+                        <span class="text letra-lato">Carpintería metálica</span>
+                    </button>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="img/img-hd-2.png" alt="Descripción de la imagen" class="img-fluid absolute centrado">
+                    <button class="button others">
+                        <span class="icon"><i class="fas fa-cubes"></i></span>
+                        <span class="text letra-lato">Otros</span>
+                    </button>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="img/img-hd-3.png" alt="Descripción de la imagen" class="img-fluid absolute centrado">
+                    <button class="button accessories">
+                        <span class="icon"><i class="fas fa-briefcase"></i></span>
+                        <span class="text letra-lato">Accesorios</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="height: 500px;">
+
     </div>
 
     <script src="js/script.js"></script>
