@@ -72,9 +72,21 @@ html {
 /*=======================================================================================================================================*/
 /*HEADER*/
 /*=======================================================================================================================================*/
+.pre-header {
+    height: 100px;
+}
+
 .header-grid {
     display: grid;
     grid-template-columns: 2fr 3fr;
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 .logo {
@@ -126,7 +138,7 @@ html {
     overflow: hidden;
     height: 40px;
     background-color: #FB5B22;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: 700;
     padding-inline: 20px;
     border: none;
@@ -369,6 +381,52 @@ html {
 }
 
 /*===========================================*/
+/*SECCION - EQUIPOS - INDUSTRIALES*/
+/*===========================================*/
+.recorte-2 {
+    position: relative;
+    width: 500px;
+    height: 110px;
+    background-color: rgb(255, 102, 0);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.recorte-2 .titulo-seccion {
+    top: 50%;
+    left: 50%;
+    transform: translate(-38%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-shadow:
+        2px 2px 2px rgba(0, 0, 0, 0.3),
+        4px 4px 4px rgba(0, 0, 0, 0.3),
+        6px 6px 6px rgba(0, 0, 0, 0.3),
+        8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sombra-2 {
+    position: relative;
+    width: 500px;
+    height: 110px;
+    background-color: rgba(192, 183, 183, 0.3);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+    margin-top: -90px;
+    margin-left: 0px;
+    z-index: 0;
+}
+
+.posicion-derecha {
+    margin-left: auto;
+    transform: translateX(calc(100% - 500px));
+}
+
+
+
+/*===========================================*/
 /*FOOTER*/
 /*===========================================*/
 
@@ -376,6 +434,10 @@ html {
 /*TABLET HORIZONTAL LG 1024px*/
 /*=======================================================================================================================================*/
 @media (max-width: 1199px) and (min-width: 992px) {
+    .pre-header {
+        height: 95px;
+    }
+
     .item-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -485,6 +547,10 @@ html {
     /*===========================================*/
     /*HEADER*/
     /*===========================================*/
+    .pre-header {
+        height: 85px;
+    }
+
     .header-grid {
         display: grid;
         grid-template-columns: 1.5fr 3fr;
@@ -538,7 +604,7 @@ html {
         overflow: hidden;
         height: 30px;
         background-color: #FB5B22;
-        color: white;
+        color: rgb(0, 0, 0);
         font-weight: 700;
         padding-inline: 20px;
         border: none;
@@ -697,6 +763,10 @@ html {
     /*===========================================*/
     /*HEADER*/
     /*===========================================*/
+    .pre-header {
+        height: 65px;
+    }
+
     .header-grid {
         display: grid;
         grid-template-columns: 1.5fr 3fr;
@@ -750,7 +820,7 @@ html {
         overflow: hidden;
         height: 25px;
         background-color: #FB5B22;
-        color: white;
+        color: rgb(0, 0, 0);
         font-weight: 700;
         padding-inline: 15px;
         border: none;
@@ -913,6 +983,10 @@ html {
     /*===========================================*/
     /*HEADER*/
     /*===========================================*/
+    .pre-header {
+        height: 65px;
+    }
+
     .header-grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -958,7 +1032,7 @@ html {
         overflow: hidden;
         height: 20px;
         background-color: #FB5B22;
-        color: white;
+        color: rgb(0, 0, 0);
         font-weight: 700;
         padding-inline: 10px;
         border: none;
@@ -975,6 +1049,7 @@ html {
     .bloque {
         display: none;
         width: 100%;
+        margin-bottom: 5px;
     }
 
     .header-menu {

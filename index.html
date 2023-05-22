@@ -71,8 +71,11 @@
     <!--=======================================================================================================================================-->
     <!--HEADER-->
     <!--=======================================================================================================================================-->
-    <div class="container-fluid mt-2">
-        <div class="container header-grid">
+    <div class="pre-header"></div>
+    <div class="container-fluid header-fixed">
+        <div class="container header-grid" style="background-color: white;border-bottom: 4px solid #c9c9c9;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(55, 55, 55, 0.385);">
 
             <div class="logo ">
                 <img class="img-fluid" src="img/logo.png" alt="">
@@ -86,12 +89,14 @@
             </div>
 
             <div id="header-menu" class="header-menu">
-                <div class="bloque m-0 p-0">
+                <div class="bloque">
 
                     <button class="letra-lato btn-productos"
                         onclick="scrollToSection('.seccion-productos')">Productos</button>
 
-                    <button class="letra-lato">Equipos Industriales</button>
+                    <button class="letra-lato" onclick="scrollToSection('.seccion-equipos-industriales')">Equipos
+                        Industriales</button>
+
                     <button class="letra-lato">Nosotros</button>
                     <button class="letra-lato">Contacto</button>
 
@@ -105,7 +110,7 @@
     <!--CAROSUEL-->
     <!--=======================================================================================================================================-->
     <div class="container mt-2">
-        <div class="container-fluid " style="border: 4px solid #ffffff; /* Color naranja oscuro */
+        <div class="container-fluid " style="border: 4px solid #ffffff;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(55, 55, 55, 0.385);">
             <div class="owl-carousel">
@@ -248,7 +253,21 @@
         </div>
     </div>
 
-    <div style="height: 500px;">
+    <!--=======================================================================================================================================-->
+    <!--EQUIPOS INDUSTRIALES - SECCION-->
+    <!--=======================================================================================================================================-->
+    <div class="container-fluid mt-5 seccion-equipos-industriales">
+        <div class="container">
+            <div class="recorte-2 posicion-derecha">
+                <h2 class="letra-sigmar absolute titulo-seccion">Equipos Industriales</h2>
+            </div>
+            <div class="sombra-2 posicion-derecha"></div>
+        </div>
+    </div>
+
+
+
+    <div style="height: 1000px;">
 
     </div>
 

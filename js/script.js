@@ -1,20 +1,18 @@
-$(document).ready(function () {
-    var alturaBloque = $(".bloque").outerHeight(true);
+var alturaBloque = $(".bloque").outerHeight(true);
 
-    $("#menu-icon").click(function () {
-        $("img").toggleClass("logo-anime-img");
-        $("h1").toggleClass("logo-anime-h1");
+$("#menu-icon").click(function () {
+    $(".logo img").toggleClass("logo-anime-img");
+    $("h1").toggleClass("logo-anime-h1");
 
-        var $contenedor = $(".header-menu");
+    var $contenedor = $(".header-menu");
 
-        if ($contenedor.height() === 0) {
-            $contenedor.height(alturaBloque);
-            $(".bloque").slideDown();
-        } else {
-            $contenedor.height(0);
-            $(".bloque").slideUp();
-        }
-    });
+    if ($contenedor.height() === 0) {
+        $contenedor.height(alturaBloque);
+        $(".bloque").slideDown();
+    } else {
+        $contenedor.height(0);
+        $(".bloque").slideUp();
+    }
 });
 
 //=======================================================================================================================================
@@ -35,13 +33,20 @@ $(document).ready(function () {
 //=======================================================================================================================================
 function scrollToSection(selector) {
     const section = document.querySelector(selector);
-    const scrollAdjust = -10;
+    let scrollAdjust = -10;
 
     if (section) {
+        const header = document.querySelector('.header-fixed');
+        const headerStyle = getComputedStyle(header);
+        const headerHeight = parseInt(headerStyle.height, 10) + 15;
+        scrollAdjust = -headerHeight || scrollAdjust;
+
         const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
         window.scrollTo({ top: sectionTop + scrollAdjust, behavior: 'smooth' });
     }
 }
+
+
 
 
 
