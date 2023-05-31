@@ -65,6 +65,10 @@ html {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
+.letra-monserrat-serif {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .letra-sigmar {
     font-family: 'Sigmar', cursive;
 }
@@ -585,6 +589,120 @@ html {
 
 .menu-toggle-button {
     display: none;
+}
+
+/*===========================================*/
+/*CATEGORIA IMAGENES*/
+/*===========================================*/
+.container__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px 10px;
+    column-gap: 15px;
+}
+
+.card__father {
+    perspective: 1000px;
+}
+
+.card__father:hover .card {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+
+.cardA {
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+.card__front {
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card__front,
+.card__back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.card__back {
+    transform: rotateY(180deg);
+    background: white;
+}
+
+.body__card_front {
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #fc5c04 !important;
+    transform: translateZ(60px);
+}
+
+.body__card_front h1 {
+    font-size: 15px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: rgba(105, 105, 105, 0.175); */
+    padding: 15px;
+    padding-top: 35px;
+
+}
+
+.body__card_back {
+    padding: 25px;
+    /* text-align: center; */
+    transform: translateZ(60px);
+}
+
+.body__card_back h1 {
+    font-size: 20px;
+}
+
+.body__card_back p {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.body__card_back input {
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #14e169;
+    box-shadow: 1px 1px 30px -5px #58f670;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
+}
+
+.body__card_back input:hover {
+    box-shadow: 1px 1px 30px 0px #449de6;
 }
 
 /*===========================================*/
