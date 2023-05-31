@@ -605,7 +605,7 @@ html {
     perspective: 1000px;
 }
 
-.card__father:hover .card {
+.card__father:hover .cardA {
     transform: rotateY(180deg);
     cursor: pointer;
 }
