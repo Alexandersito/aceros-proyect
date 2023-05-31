@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP Y JQUERY -->
+
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- JavaScript de jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+    <!-- POPPER -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+
+    <!-- ICONOS DE FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/3fb3f6418b.js" crossorigin="anonymous"></script>
+    <!-- ICONOS DE REMIXICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- ROBOTO -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@900&display=swap" rel="stylesheet">
+    <!-- OPEN SANS -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <!-- ALLAN -->
+    <link href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap" rel="stylesheet">
+    <!-- LATO -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <!-- MONTSERRAT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,900&display=swap"
+        rel="stylesheet">
+    <!-- SIGMAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CAROUSEL OWL -->
+    <!-- CSS de Owl Carousel 2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- JavaScript de Owl Carousel 2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <title>Aceros Inox</title>
+
+</head>
+
+<body>
+
+    <!--=======================================================================================================================================-->
+    <!--HEADER-->
+    <!--=======================================================================================================================================-->
+    <div class="pre-header"></div>
+    <div class="container-fluid header-fixed">
+        <div class="container header-grid" style="background-color: white;border-bottom: 4px solid #c9c9c9;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(55, 55, 55, 0.385);">
+
+            <div class="logo">
+                <img class="img-fluid" src="img/logo.png" alt="">
+                <h1 class="text-wrap letra-roboto mt-2">
+                    <span class="d-block">Super</span>
+                    <span class="d-block">Aceros Inox</span>
+                </h1>
+
+                <i id="menu-icon" class="icono-menu ri-menu-line d-sm-none"
+                    style="font-size: 30px; position: absolute; top: 0; right: 0;"></i>
+            </div>
+
+            <div id="header-menu" class="header-menu">
+                <div class="bloque">
+
+                    <button class="letra-lato btn-productos" onclick="enviarIndex()">Inicio</button>
+
+                    <button class="letra-lato btn-productos">Productos</button>
+
+                    <button class="letra-lato">Equipos
+                        Industriales</button>
+
+
+                    <button class="letra-lato">
+                        <i class="ri-shopping-cart-line">
+                            <span class="contador-carrito letra-open-sans">0</span>
+                        </i>
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--=======================================================================================================================================-->
+    <!--PRODUCTOS - CATEGORIAS Y IMGS-->
+    <!--=======================================================================================================================================-->
+    <div class="container-fluid">
+        <div class="container pagina-productos">
+
+            <div class="categorias">
+
+                <h1 class="letra-roboto p-0 mb-md-3">PRODUCTOS</h1>
+
+                <ul class="menu-productos mt-md-2">
+
+                    <li class="category-productos mb-2">
+                        <h5 class="category-header letra-roboto  ">
+                            <span class="icon">
+                                <i class="fas fa-thermometer-three-quarters"></i>
+                            </span>
+                            <span class="text">Línea caliente</span>
+                        </h5>
+                        <ul class="subcategories-productos letra-open-sans list-unstyled">
+                            <li>Cocina Industrial</li>
+                            <li>Cocina Electrica</li>
+                            <li>Cocina con Horno</li>
+                            <li>Cocina Chifera</li>
+                            <li>Cocina Mixta</li>
+                            <li>Hornos</li>
+                            <li>Parrilleras</li>
+                            <li>Carritos</li>
+                            <li>Freidora</li>
+                            <li>Tabolas</li>
+
+                        </ul>
+                    </li>
+
+                    <li class="category-productos mb-2">
+                        <h5 class="category-header letra-roboto">
+                            <span class="icon">
+                                <i class="fas fa-snowflake"></i>
+                            </span>
+                            <span class="text">Línea fría</span>
+                        </h5>
+                        <ul class="subcategories-productos letra-open-sans list-unstyled">
+                            <li>Exhibidora</li>
+                            <li>Cámara</li>
+                            <li>Mesa Refrigerada</li>
+                            <li>Cuarto de Refrigeración</li>
+                            <li>Motor Extractor de Aire</li>
+                        </ul>
+                    </li>
+
+                    <li class="category-productos mb-2">
+                        <h5 class="category-header letra-roboto">
+                            <span class="icon">
+                                <i class="fas fa-tools"></i>
+                            </span>
+                            <span class="text">Carpintería Metálica</span>
+                        </h5>
+                        <ul class="subcategories-productos letra-open-sans list-unstyled">
+                            <li>Exhibidora</li>
+                            <li>Cámara</li>
+                            <li>Mesa Refrigerada</li>
+                            <li>Cuarto de Refrigeración</li>
+                            <li>Motor Extractor de Aire</li>
+                        </ul>
+                    </li>
+
+                    <li class="category-productos mb-2">
+                        <h5 class="category-header letra-roboto">
+                            <span class="icon">
+                                <i class="fas fa-cubes"></i>
+                            </span>
+                            <span class="text">Otros</span>
+                        </h5>
+                        <ul class="subcategories-productos letra-open-sans list-unstyled">
+                            <li>Exhibidora</li>
+                            <li>Cámara</li>
+                            <li>Mesa Refrigerada</li>
+                            <li>Cuarto de Refrigeración</li>
+                            <li>Motor Extractor de Aire</li>
+                        </ul>
+                    </li>
+
+                    <li class="category-productos mb-2">
+                        <h5 class="category-header letra-roboto">
+                            <span class="icon">
+                                <i class="fas fa-briefcase"></i>
+                            </span>
+                            <span class="text">Accesorios</span>
+                        </h5>
+                        <ul class="subcategories-productos letra-open-sans list-unstyled">
+                            <li>Exhibidora</li>
+                            <li>Cámara</li>
+                            <li>Mesa Refrigerada</li>
+                            <li>Cuarto de Refrigeración</li>
+                            <li>Motor Extractor de Aire</li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="categorias-img bg-success" style="height: 200px;">
+
+                <button id="menu-toggle" class="menu-toggle-button ">
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div style="height: 1000px;">
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>

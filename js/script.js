@@ -46,7 +46,73 @@ function scrollToSection(selector) {
     }
 }
 
+//=======================================================================================================================================
+//REDIRECCIONAR AL INDEX
+//=======================================================================================================================================
+function enviarIndex() {
+    var url = 'index.html';
+    window.location.href = url;
+}
 
+//=======================================================================================================================================
+//EFECTO DE DESPLIEGUE DE SUBCATEGORIAS EN BASE AL DATO GET DE LA URL
+//=======================================================================================================================================
+function enviarInformacion(palabra) {
+    // Codifica la palabra para asegurar que sea válida en una URL
+    var palabraCodificada = encodeURIComponent(palabra);
 
+    // Construye la URL con el parámetro de consulta
+    var url = 'productos.html?dato=' + palabraCodificada;
 
+    // Redirecciona a la página con la URL construida
+    window.location.href = url;
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const categoryHeaders = document.querySelectorAll('.category-header');
+
+    categoryHeaders.forEach((header, index) => {
+        header.addEventListener('click', () => {
+            const category = header.parentElement;
+            const isActive = category.classList.contains('active');
+            const subcategories = category.querySelector('.subcategories-productos');
+
+            if (isActive) {
+                category.classList.remove('active');
+                subcategories.style.maxHeight = null;
+            } else {
+                categoryHeaders.forEach(header => {
+                    header.parentElement.classList.remove('active');
+                    header.parentElement.querySelector('.subcategories-productos').style.maxHeight = null;
+                });
+
+                category.classList.add('active');
+                subcategories.style.maxHeight = subcategories.scrollHeight + 'px';
+            }
+        });
+
+        // Obtén el valor del parámetro de consulta llamado 'dato'
+        var parametro = new URLSearchParams(window.location.search).get('dato');
+
+        // Comprueba si el parámetro coincide con el índice actual
+        if (parametro && Number(parametro) === index + 1) {
+            header.click(); // Simula un clic en la categoría correspondiente
+        }
+    });
+});
+
+//=======================================================================================================================================
+//
+//=======================================================================================================================================
+// Obtén los elementos del DOM
+const menuToggle = document.getElementById('menu-toggle');
+const icon = menuToggle.firstElementChild;
+const categorias = document.querySelector('.categorias');
+
+// Agrega un controlador de eventos al botón
+menuToggle.addEventListener('click', () => {
+    icon.classList.toggle('ri-arrow-right-line');
+    icon.classList.toggle('ri-arrow-left-line');
+    categorias.classList.toggle('categorias-visible');
+});
 
