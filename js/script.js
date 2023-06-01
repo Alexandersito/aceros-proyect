@@ -2,7 +2,7 @@ var alturaBloque = $(".bloque").outerHeight(true);
 
 $("#menu-icon").click(function () {
     $(".logo img").toggleClass("logo-anime-img");
-    $("h1").toggleClass("logo-anime-h1");
+    $(".logo h1").toggleClass("logo-anime-h1");
 
     var $contenedor = $(".header-menu");
 
@@ -113,6 +113,40 @@ const categorias = document.querySelector('.categorias');
 menuToggle.addEventListener('click', () => {
     icon.classList.toggle('ri-arrow-right-line');
     icon.classList.toggle('ri-arrow-left-line');
+    if (icon.style.color === 'black') {
+        icon.style.color = 'white';
+    } else {
+        icon.style.color = 'black';
+    }
     categorias.classList.toggle('categorias-visible');
+});
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+// Función para determinar la dirección del deslizamiento
+function getSwipeDirection() {
+    return touchEndX < touchStartX ? 'derecha-izquierda' : 'izquierda-derecha';
+}
+
+// Evento touchstart
+categorias.addEventListener('touchstart', (event) => {
+    touchStartX = event.touches[0].clientX;
+});
+
+// Evento touchmove
+categorias.addEventListener('touchmove', (event) => {
+    touchEndX = event.touches[0].clientX;
+});
+
+// Evento touchend
+categorias.addEventListener('touchend', () => {
+    const swipeDirection = getSwipeDirection();
+
+    if (swipeDirection === 'derecha-izquierda') {
+        categorias.classList.remove('categorias-visible');
+    } else if (swipeDirection === 'izquierda-derecha') {
+        categorias.classList.add('categorias-visible');
+    }
 });
 
