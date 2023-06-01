@@ -121,32 +121,3 @@ menuToggle.addEventListener('click', () => {
     categorias.classList.toggle('categorias-visible');
 });
 
-let touchStartX = 0;
-let touchEndX = 0;
-
-// Función para determinar la dirección del deslizamiento
-function getSwipeDirection() {
-    return touchEndX < touchStartX ? 'derecha-izquierda' : 'izquierda-derecha';
-}
-
-// Evento touchstart
-categorias.addEventListener('touchstart', (event) => {
-    touchStartX = event.touches[0].clientX;
-});
-
-// Evento touchmove
-categorias.addEventListener('touchmove', (event) => {
-    touchEndX = event.touches[0].clientX;
-});
-
-// Evento touchend
-categorias.addEventListener('touchend', () => {
-    const swipeDirection = getSwipeDirection();
-
-    if (swipeDirection === 'derecha-izquierda') {
-        categorias.classList.remove('categorias-visible');
-    } else if (swipeDirection === 'izquierda-derecha') {
-        categorias.classList.add('categorias-visible');
-    }
-});
-
