@@ -121,3 +121,32 @@ menuToggle.addEventListener('click', () => {
     categorias.classList.toggle('categorias-visible');
 });
 
+//=======================================================================================================================================
+//BOTON SCROLL TOP
+//=======================================================================================================================================
+window.addEventListener('scroll', function () {
+    var scrollButton = document.getElementById('scrollButton');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollButton.style.display = 'block';
+    } else {
+        scrollButton.style.display = 'none';
+    }
+});
+
+document.getElementById('scrollButton').addEventListener('click', function () {
+    scrollToTop(1000); // Duración del desplazamiento en milisegundos (1 segundo)
+});
+
+function scrollToTop(scrollDuration) {
+    var scrollStep = -window.scrollY / (scrollDuration / 15);
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Cambiamos 'instant' a 'smooth' para agregar una animación suave
+    });
+}
+
+
+
+
+
+
