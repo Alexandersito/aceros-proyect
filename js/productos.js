@@ -216,7 +216,7 @@ var tablaCocinasMixtas = [
     {
         id: 2,
         nombre: "COCINA CON 2 HORNILLAS Y 2 WOK",
-        img: "img/img-categorias/linea-caliente/cocinas-mixta/cocina-1.png",
+        img: "img/img-categorias/linea-caliente/cocinas-mixta/cocina-2.png",
         caracteristicas: [
             "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
             "Espesor de plancha 1.20mm",
@@ -637,6 +637,126 @@ var tablaCamaras = [
         ]
     }
 ];
+
+//===========================================
+//TABLA MESAS REFRIGERADAS
+//===========================================
+var tablaMesasRefrigeradas = [
+    {
+        id: 1,
+        nombre: "MESA REFRIGERADA 1 PUERTA",
+        img: "img/img-categorias/linea-fria/mesas-refrigeradas/mesa-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Aislamiento térmico de poliestireno expandido",
+            "Montado sobre 04 garruchas (02 con freno giratorio)",
+            "Ajustes de temperatura por control termostático",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "MESA REFRIGERADA 2 PUERTAS",
+        img: "img/img-categorias/linea-fria/mesas-refrigeradas/mesa-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Aislamiento térmico de poliestireno expandido",
+            "Montado sobre 04 garruchas (02 con freno giratorio)",
+            "Ajustes de temperatura por control termostático",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 3,
+        nombre: "MESA REFRIGERADA 3 PUERTAS",
+        img: "img/img-categorias/linea-fria/mesas-refrigeradas/mesa-3.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Aislamiento térmico de poliestireno expandido",
+            "Montado sobre 04 garruchas (02 con freno giratorio)",
+            "Ajustes de temperatura por control termostático",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 4,
+        nombre: "MESA ENSALADERA",
+        img: "img/img-categorias/linea-fria/mesas-refrigeradas/mesa-4.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Aislamiento térmico de poliestireno expandido",
+            "Montado sobre 04 garruchas (02 con freno giratorio)",
+            "Ajustes de temperatura por control termostático",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+];
+
+//===========================================
+//TABLA CUARTOS DE REFRIGERACION
+//===========================================
+var tablaCuartosRefrigeracion = [
+    {
+        id: 1,
+        nombre: "CUARTO DE REFRIGERACIÓN-CONSERVACIÓN",
+        img: "img/img-categorias/linea-fria/cuartos-refrigeracion/cuarto-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Ahorro de energía",
+            "El montaje se realiza con gran rapidez desde el interior de la cámara",
+            "Unidad autocontenida",
+            "Aislamiento de 3\"",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "CUARTO DE REFRIGERACIÓN-CONGELACIÓN",
+        img: "img/img-categorias/linea-fria/cuartos-refrigeracion/cuarto-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Ángulos de la cámara redondeados interna y externamente",
+            "Aislamiento en poliuretano inyectado a alta presión libre de CFC´s con Densidad de 40 Kg/m3",
+            "Sistema de recirculación de aire por medio de ventiladores",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+];
+
+//===========================================
+//TABLA MOTORES EXTRACTORES
+//===========================================
+var tablaMotoresExtractores = [
+    {
+        id: 1,
+        nombre: "EXTRACTOR DE AIRE PARA DUCTO",
+        img: "img/img-categorias/linea-fria/motores-extractores/motor-1.png",
+        caracteristicas: [
+            "Carcasa fabricada en acero (AISI 304) en una sola pieza, motor fuera del flujo del aire, con protección en poleas y bandas, caja cojinetes con rodamientos a bolas",
+            "Temperatura máxima de operación: 85°C",
+            "Montaje en conductos, tanto en extremos como intercalados",
+            "Eliminación de humos, procesos industriales, etc."
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "EXTRACTOR CENTRIFUGO DE AIRE",
+        img: "img/img-categorias/linea-fria/motores-extractores/motor-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Estos equipos brindan grandes prestaciones de caudal-presión con mínimo consumo de energía y nivel sonoro bajo, lo cual lo hace un equipo sumamente versátil para aplicaciones de abastecimiento y extracción en sistemas HVAC, industriales, de proceso y comerciales"
+        ]
+    }
+];
 //=======================================================================================================================================
 //IMPRIMIR DINAMICAMENTE
 //=======================================================================================================================================
@@ -683,6 +803,9 @@ asignarEventoClick('tabolas-btn', tablaTabolas);
 //===========================================
 asignarEventoClick('exhibidoras-btn', tablaExhibidoras);
 asignarEventoClick('camaras-btn', tablaCamaras);
+asignarEventoClick('mesas-refrigeradas-btn', tablaMesasRefrigeradas);
+asignarEventoClick('cuartos-refrigeracion-btn', tablaCuartosRefrigeracion);
+asignarEventoClick('motores-extractores-btn', tablaMotoresExtractores);
 
 function mantenerBotonFlecha() {
     const iconElement = document.querySelector('#menu-toggle i');
