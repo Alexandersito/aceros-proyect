@@ -757,6 +757,485 @@ var tablaMotoresExtractores = [
         ]
     }
 ];
+
+//=======================================================================================================================================
+//CARPINTERIA METALICA
+//=======================================================================================================================================
+//===========================================
+//TABLA MESA TRABAJO CENTRAL
+//===========================================
+var tablaMesaTrabajoCentral = [
+    {
+        id: 1,
+        nombre: "CON 1 NIVEL",
+        img: "img/img-categorias/carpinteria-metalica/mesa-trabajo-central/mesa-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20 a 1.50mm",
+            "Acabado satinado",
+            "Patas de tubo redondo con regatones",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "CON 3 NIVELES",
+        img: "img/img-categorias/carpinteria-metalica/mesa-trabajo-central/mesa-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20 a 1.50mm",
+            "Acabado satinado",
+            "Patas de tubo redondo con regatones",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+
+];
+
+//===========================================
+//TABLA MESA TRABAJO MURAL
+//===========================================
+var tablaMesaTrabajoMural = [
+    {
+        id: 1,
+        nombre: "CON 1 NIVEL",
+        img: "img/img-categorias/carpinteria-metalica/mesa-trabajo-mural/mesa-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Espaldar de 10 cm",
+            "Acabado satinado",
+            "Patas de tubo redondo con regatones",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "CON 3 NIVELES",
+        img: "img/img-categorias/carpinteria-metalica/mesa-trabajo-mural/mesa-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Espaldar de 10 cm",
+            "Acabado satinado",
+            "Patas de tubo redondo con regatones",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+
+];
+
+//===========================================
+//TABLA MESA REPISA
+//===========================================
+var tablaMesaRepisa = [
+    {
+        id: 1,
+        nombre: "MESA CON REPISA DE 1 NIVEL",
+        img: "img/img-categorias/carpinteria-metalica/mesa-repisa/mesa-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Acabado satinado",
+            "Patas de tubo redondo con regatones",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "MESA CON REPISA DE 2 NIVELES",
+        img: "img/img-categorias/carpinteria-metalica/mesa-repisa/mesa-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Acabado satinado",
+            "Patas de tubo redondo con regatones",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+
+];
+
+//===========================================
+//TABLA MESA APOYO
+//===========================================
+var tablaMesaApoyo = [
+    {
+        id: 1,
+        nombre: "MESA CON DESCONCHE",
+        img: "img/img-categorias/carpinteria-metalica/mesa-apoyo/mesa-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Respaldar de 10 cm de altura",
+            "Acabado satinado",
+            "Patas de tubo redondo con regatones",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "MESA DE APOYO CON 3 TABLEROS",
+        img: "img/img-categorias/carpinteria-metalica/mesa-apoyo/mesa-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Respaldar de 10 cm de altura",
+            "Acabado satinado",
+            "Patas de tubo redondo con regatones",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+
+];
+
+//===========================================
+//TABLA LAVADERO
+//===========================================
+var tablaLavadero = [
+    {
+        id: 1,
+        nombre: "LAVADERO CON 1 POZA",
+        img: "img/img-categorias/carpinteria-metalica/lavadero/lavadero-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Respaldar de 10 cm de altura",
+            "Acabado satinado",
+            "Esquinas redondas (para evitar acumulación de alimentos)",
+            "Patas de tubo redondo con regatones",
+            "Borde anti rebalse en todo el perímetro",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "LAVADERO CON 2 POZAS",
+        img: "img/img-categorias/carpinteria-metalica/lavadero/lavadero-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Respaldar de 10 cm de altura",
+            "Acabado satinado",
+            "Esquinas redondas (para evitar acumulación de alimentos)",
+            "Patas de tubo redondo con regatones",
+            "Borde anti rebalse en todo el perímetro",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 3,
+        nombre: "LAVADERO CON 2 POZAS Y ESCURRIDOR",
+        img: "img/img-categorias/carpinteria-metalica/lavadero/lavadero-3.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Respaldar de 10 cm de altura",
+            "Acabado satinado",
+            "Esquinas redondas (para evitar acumulación de alimentos)",
+            "Patas de tubo redondo con regatones",
+            "Borde anti rebalse en todo el perímetro",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 4,
+        nombre: "LAVADERO CON 3 POZAS Y ESCURRIDOR",
+        img: "img/img-categorias/carpinteria-metalica/lavadero/lavadero-4.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Respaldar de 10 cm de altura",
+            "Acabado satinado",
+            "Esquinas redondas (para evitar acumulación de alimentos)",
+            "Patas de tubo redondo con regatones",
+            "Borde anti rebalse en todo el perímetro",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+
+];
+
+//===========================================
+//TABLA LAVADERO ESCURRIDOR
+//===========================================
+var tablaLavaderoEscurridor = [
+    {
+        id: 1,
+        nombre: "LAVADERO DE 1 POZA CON ESCURRIDOR DE PLATOS Y VASOS",
+        img: "img/img-categorias/carpinteria-metalica/lavadero-escurridor/lavadero-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Respaldar de 10 cm de altura",
+            "Esquinas redondas (para evitar acumulación de alimentos)",
+            "Patas de tubo redondo con regatones",
+            "Borde anti rebalse en todo el perímetro",
+            "Varillas de 3/16\"",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "LAVADERO DE 2 POZAS CON ESCURRIDOR DE PLATOS Y VASOS",
+        img: "img/img-categorias/carpinteria-metalica/lavadero-escurridor/lavadero-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Respaldar de 10 cm de altura",
+            "Esquinas redondas (para evitar acumulación de alimentos)",
+            "Patas de tubo redondo con regatones",
+            "Borde anti rebalse en todo el perímetro",
+            "Varillas de 3/16\"",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+
+];
+
+//===========================================
+//TABLA LAVAMANOS
+//===========================================
+var tablaLavamanos = [
+    {
+        id: 1,
+        nombre: "LAVAMANOS CON PEDAL",
+        img: "img/img-categorias/carpinteria-metalica/lavamanos/lavamano-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Respaldar de 10 cm de altura",
+            "Acabado satinado",
+            "Grifería en acero",
+            "Patas de tubo redondo con regatones",
+            "Borde anti rebalse en todo el perímetro",
+            "Bomba a pie",
+            "Dispensador de papel y jabón líquido",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "LAVAMANOS CON PEDAL PORTÁTIL",
+        img: "img/img-categorias/carpinteria-metalica/lavamanos/lavamano-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Respaldar de 10 cm de altura",
+            "Acabado satinado",
+            "Grifería en acero",
+            "Patas de tubo redondo con regatones",
+            "Borde anti rebalse en todo el perímetro",
+            "Bomba a pie",
+            "Dispensador de papel y jabón líquido",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+
+];
+
+//===========================================
+//TABLA ESTANTES
+//===========================================
+var tablaEstantes = [
+    {
+        id: 1,
+        nombre: "ESTANTE CON 3 NIVELES",
+        img: "img/img-categorias/carpinteria-metalica/estantes/estante-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Estructura principal trabajada en fierro cuadrado de 1 1/2 x 1.5",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "ESTANTE CON 4 NIVELES",
+        img: "img/img-categorias/carpinteria-metalica/estantes/estante-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Estructura principal trabajada en fierro cuadrado de 1 1/2 x 1.5",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+
+];
+
+//===========================================
+//TABLA ESTANTERIAS
+//===========================================
+var tablaEstanterias = [
+    {
+        id: 1,
+        nombre: "ESTANTE CON 5 NIVELES",
+        img: "img/img-categorias/carpinteria-metalica/estanterias/estanteria-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Estructura principal trabajada en fierro cuadrado de 1 1/2 x 1.5",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "ESTANTE TIPO L",
+        img: "img/img-categorias/carpinteria-metalica/estanterias/estanteria-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Estructura principal trabajada en fierro cuadrado de 1 1/2 x 1.5",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+
+];
+
+//===========================================
+//TABLA COCHES ROPA
+//===========================================
+var tablaCocheRopa = [
+    {
+        id: 1,
+        nombre: "COCHE PARA ROPA HÚMEDA O SECA",
+        img: "img/img-categorias/carpinteria-metalica/coche-ropa/coche-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Este contenedor se utiliza para transportar ropa húmeda ó seca",
+            "Dispone de un saco desmontable",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "COCHE PARA ROPA SUCIA",
+        img: "img/img-categorias/carpinteria-metalica/coche-ropa/coche-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Tapas en acero inoxidable",
+            "Manija en acero, para el fácil traslado",
+            "4 garruchas, 2 con freno y 2 sin freno",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+
+];
+
+//===========================================
+//TABLA CAMPANAS
+//===========================================
+var tablaCampanas = [
+    {
+        id: 1,
+        nombre: "CAMPANA CENTRAL",
+        img: "img/img-categorias/carpinteria-metalica/campanas/campana-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Salida para ducto de 30 x 30",
+            "Calidad 304",
+            "Ducto: opcional",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "CAMPANA MURAL",
+        img: "img/img-categorias/carpinteria-metalica/campanas/campana-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Salida para ducto de 30 x 30",
+            "Ducto: opcional",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+
+];
+
+//===========================================
+//TABLA REPISAS
+//===========================================
+var tablaRepisas = [
+    {
+        id: 1,
+        nombre: "REPISA 1 NIVEL",
+        img: "img/img-categorias/carpinteria-metalica/repisas/repisa-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Fácil de ensamblar",
+            "Diseño funcional",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "REPISA 2 NIVELES",
+        img: "img/img-categorias/carpinteria-metalica/repisas/repisa-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Fácil de ensamblar",
+            "Diseño funcional",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+
+];
+
+//===========================================
+//TABLA PORTA BANDEJAS
+//===========================================
+var tablaPortaBandejas = [
+    {
+        id: 1,
+        nombre: "ATRIL PORTA BANDEJAS",
+        img: "img/img-categorias/carpinteria-metalica/porta-bandejas/porta-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Vasos troquelados, porta cubiertos",
+            "Porta bandejas",
+            "Patas de tubo redondo",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "CARRO PORTA BANDEJAS",
+        img: "img/img-categorias/carpinteria-metalica/porta-bandejas/porta-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Capacidad de hasta 14 bandejas",
+            "Barra de cierre para evitar caídas",
+            "Protección de goma en las ruedas",
+            "4 ruedas de 360º, 2 de ellas con freno",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+
+];
+
+
+
+
 //=======================================================================================================================================
 //IMPRIMIR DINAMICAMENTE
 //=======================================================================================================================================
@@ -771,16 +1250,23 @@ function asignarEventoClick(idBoton, tabla) {
         var botones = document.querySelectorAll('li');
         botones.forEach(function (boton) {
             boton.style.backgroundColor = '';
+            boton.style.color = ''
             boton.style.fontWeight = '100'; // Restaurar fuente normal
         });
 
         // Asignar estilo al botón actual
         boton.style.backgroundColor = 'white';
+        boton.style.color = 'black';
         boton.style.fontWeight = '900'; // Establecer fuente negrita
 
         mantenerBotonFlecha();
         imprimirTabla(tabla);
         categorias.classList.toggle('categorias-visible');
+
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
 }
 
@@ -807,6 +1293,24 @@ asignarEventoClick('mesas-refrigeradas-btn', tablaMesasRefrigeradas);
 asignarEventoClick('cuartos-refrigeracion-btn', tablaCuartosRefrigeracion);
 asignarEventoClick('motores-extractores-btn', tablaMotoresExtractores);
 
+//===========================================
+//CARPINTERIA METALICA
+//===========================================
+asignarEventoClick('mesa-trabajo-central-btn', tablaMesaTrabajoCentral);
+asignarEventoClick('mesa-trabajo-mural-btn', tablaMesaTrabajoMural);
+asignarEventoClick('mesa-repisa-btn', tablaMesaRepisa);
+asignarEventoClick('mesa-apoyo-btn', tablaMesaApoyo);
+asignarEventoClick('lavadero-btn', tablaLavadero);
+asignarEventoClick('lavadero-escurridor-btn', tablaLavaderoEscurridor);
+asignarEventoClick('lavamanos-btn', tablaLavamanos);
+asignarEventoClick('estantes-btn', tablaEstantes);
+asignarEventoClick('estanterias-btn', tablaEstanterias);
+asignarEventoClick('coches-ropa-btn', tablaCocheRopa);
+asignarEventoClick('campanas-btn', tablaCampanas);
+asignarEventoClick('repisas-btn', tablaRepisas);
+asignarEventoClick('porta-bandejas-btn', tablaPortaBandejas);
+
+
 function mantenerBotonFlecha() {
     const iconElement = document.querySelector('#menu-toggle i');
     iconElement.style.color = 'white';
@@ -823,6 +1327,8 @@ if (parametro && Number(parametro) === 1) {
     imprimirTabla(tablaCocinasIndustriales);
 } if (parametro && Number(parametro) === 2) {
     imprimirTabla(tablaExhibidoras);
+} if (parametro && Number(parametro) === 3) {
+    imprimirTabla(tablaMesaTrabajoCentral);
 }
 
 //===========================================

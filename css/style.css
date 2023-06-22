@@ -43,7 +43,20 @@ html {
     justify-content: center;
 }
 
+.gradiente-1 {
+    background: rgb(255, 159, 0);
+    background: linear-gradient(90deg, rgba(255, 159, 0, 1) 24%, rgba(251, 91, 34, 1) 74%);
+}
 
+.gradiente-2 {
+    background: rgb(4, 52, 60);
+    background: linear-gradient(90deg, rgba(4, 52, 60, 1) 33%, rgba(35, 103, 115, 1) 67%);
+}
+
+.gradiente-3 {
+    background: rgb(22, 95, 107);
+    background: linear-gradient(90deg, rgba(22, 95, 107, 1) 24%, rgba(4, 52, 60, 1) 74%);
+}
 
 .letra-roboto {
     font-family: 'Roboto Serif', serif;
@@ -289,6 +302,7 @@ html {
 /*===========================================*/
 /*SECCION PRODUCTOS*/
 /*===========================================*/
+
 .recorte {
     position: relative;
     width: 500px;
@@ -335,8 +349,8 @@ html {
     position: relative;
     overflow: hidden;
     height: 250px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.873) !important;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -436,7 +450,7 @@ html {
     position: relative;
     width: 500px;
     height: 110px;
-    background-color: rgba(192, 183, 183, 0.3);
+    background-color: rgba(0, 0, 0, 0.592);
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
     margin-top: -90px;
     margin-left: 0px;
@@ -457,7 +471,8 @@ html {
 
 .grid-industrial .card {
     position: relative;
-    background-color: #f2f2f2;
+    background-color: #00000000 !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.71) !important;
     text-align: center;
 }
 
@@ -491,7 +506,7 @@ html {
     display: flex;
     align-items: center;
     padding: 20px 20px;
-    font-size: 18px;
+    font-size: 15px;
     background-color: #fb5c22b7;
     color: #fff;
     border: none;
@@ -548,7 +563,9 @@ html {
 }
 
 .category-productos:hover {
-    background-color: #ffee00;
+    background-color: #04343C;
+    color: white;
+    transition: all .5s;
 }
 
 .category-header {
@@ -579,6 +596,7 @@ html {
 
 .subcategories-productos li:hover {
     background-color: #ffffff;
+    color: black;
 }
 
 .category-productos.active .subcategories-productos {
@@ -586,7 +604,8 @@ html {
 }
 
 .category-productos.active {
-    background-color: #ffee00;
+    background-color: #04343C;
+    color: white;
 }
 
 .menu-toggle-button {
@@ -640,7 +659,8 @@ html {
 
 .card__back {
     transform: rotateY(180deg);
-    background: white;
+    /* background: #04343C; */
+
 }
 
 .body__card_front {
@@ -697,14 +717,13 @@ html {
 
 .my-button {
     bottom: 0px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 5px 30px;
+    right: 0px;
+    padding: 5px 25px;
     border: none;
-    border-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
     background-color: #ff6f00;
     color: white;
-    font-size: 16px;
     font-weight: 100;
     cursor: pointer;
     overflow: hidden;
@@ -721,7 +740,7 @@ html {
     transition: transform 0.3s ease-in-out;
     top: 2px;
     margin-right: 5px;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .my-button:hover i {
@@ -755,7 +774,9 @@ html {
 
 .product-description {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    height: 100%;
+    background: rgb(5, 5, 5);
+    background: linear-gradient(0deg, rgba(5, 5, 5, 1) 0%, rgba(4, 52, 60, 1) 39%);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.185);
@@ -767,7 +788,7 @@ html {
 }
 
 .product-description li {
-    color: #666;
+    color: #ffffff !important;
     font-size: 13px;
     margin-bottom: 5px;
 }
@@ -1100,10 +1121,10 @@ html {
 
     .my-button {
         bottom: 0px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 5px 30px;
-        border-radius: 10px;
+        right: 0px;
+        padding: 5px 25px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
         font-size: 16px;
         font-weight: 100;
         transition: all 1s;
@@ -1116,7 +1137,7 @@ html {
     .my-button i {
         top: 2px;
         margin-right: 5px;
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .product-description {
@@ -1576,11 +1597,10 @@ html {
 
     .my-button {
         bottom: 0px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 5px 20px;
-        border-radius: 5px;
-        font-size: 5px;
+        right: 0px;
+        padding: 5px 25px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
         font-weight: 100;
         transition: all 1s;
     }
@@ -1592,7 +1612,7 @@ html {
     .my-button i {
         top: 2px;
         margin-right: 5px;
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .product-description {
@@ -2021,7 +2041,7 @@ html {
     /*===========================================*/
     .container__card {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         margin: 10px 10px;
         column-gap: 15px;
         row-gap: 15px;
@@ -2045,8 +2065,14 @@ html {
     }
 
     .bg {
-        padding: 10px;
-        padding-top: 45px;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+        padding-top: 10px;
+    }
+
+    .bg img {
+        width: 250px;
     }
 
     .body__card_back {
@@ -2055,12 +2081,11 @@ html {
     }
 
     .my-button {
-        bottom: 5px;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        bottom: 0px;
+        right: 0px;
         padding: 5px 20px;
-        border-radius: 5px;
-        font-size: 5px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
         font-weight: 100;
         transition: all 1s;
     }
@@ -2072,7 +2097,7 @@ html {
     .my-button i {
         top: 2px;
         margin-right: 5px;
-        font-size: 12px;
+        font-size: 17px;
     }
 
     .product-description {
@@ -2082,7 +2107,7 @@ html {
 
     .product-description li {
         color: #666;
-        font-size: 9px;
+        font-size: 10px;
         margin-bottom: 5px;
     }
 
@@ -2589,9 +2614,6 @@ html {
     /*===========================================*/
     /*CATEGORIA IMAGENES*/
     /*===========================================*/
-    .categorias-img {
-        /* padding-top: 35px; */
-    }
 
     .container__card {
         display: grid;
@@ -2642,11 +2664,10 @@ html {
 
     .my-button {
         bottom: 0px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 5px 20px;
-        border-radius: 5px;
-        font-size: 5px;
+        right: 0px;
+        padding: 5px 25px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
         font-weight: 100;
         transition: all 1s;
     }
@@ -2658,7 +2679,7 @@ html {
     .my-button i {
         top: 2px;
         margin-right: 5px;
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .product-description {
