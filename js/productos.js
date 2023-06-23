@@ -1509,7 +1509,7 @@ function imprimirTabla(tabla) {
                     <div class="card__front"
                         style="border: 0px solid black;background-color:  #04343c ;border-top-left-radius: 10px;border-top-right-radius: 10px;">
                         <div class="bg ">
-                            <img src="${producto.img}" alt="" class="img-fluid">
+                            <img src="${producto.img}" alt="" class="img-fluid img-producto">
                         </div>
                         <div class="relative contenedor-tipo">
                             <div class="body__card_front absolute">
@@ -1529,6 +1529,9 @@ function imprimirTabla(tabla) {
                                 <i class="ri-add-line"></i>
                                 <i class="ri-shopping-cart-line"></i>
                             </button>
+                            <button class="yu-button absolute">
+                                <i class="fas fa-expand"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1538,3 +1541,48 @@ function imprimirTabla(tabla) {
         contenedor.innerHTML += html;
     });
 }
+
+//=======================================================================================================================================
+//OVERLAT VISUALIZADOR DE IMAGENES
+//=======================================================================================================================================
+document.addEventListener('DOMContentLoaded', function () {
+    // Definir una función para manejar el evento de clic en los botones
+    function handleButtonClick(event) {
+        const yuButton = event.target.closest('.yu-button');
+        if (yuButton) {
+            const cardContainer = yuButton.closest('.cardA');
+            const imgSrc = cardContainer.querySelector('.img-producto').getAttribute('src');
+            const productName = cardContainer.querySelector('.letra-signika').textContent;
+            const overlayImg = document.querySelector('.overlay-img');
+            const overlayName = document.querySelector('.overlay-name');
+            overlayImg.setAttribute('src', imgSrc);
+            overlayName.textContent = productName;
+            var overlay = document.querySelector('.overlay');
+            overlay.classList.add('active');
+        }
+    }
+
+    // Agregar un event listener al contenedor padre de los botones
+    const container = document.querySelector('.container__card');
+    container.addEventListener('click', handleButtonClick);
+
+    // Cerrar visualizador de imagen
+    var closeBtns = document.querySelectorAll('.close-btn');
+    var overlays = document.querySelectorAll('.overlay');
+
+    closeBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var overlay = btn.closest('.overlay');
+            overlay.classList.remove('active');
+        });
+    });
+
+    overlays.forEach(function (overlay) {
+        overlay.addEventListener('click', function (event) {
+            if (event.target === overlay) {
+                overlay.classList.remove('active');
+            }
+        });
+    });
+});
+

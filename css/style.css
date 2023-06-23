@@ -49,8 +49,8 @@ html {
 }
 
 .gradiente-2 {
-    background: rgb(4, 52, 60);
-    background: linear-gradient(90deg, rgba(4, 52, 60, 1) 33%, rgba(35, 103, 115, 1) 67%);
+    background: rgb(17, 91, 105);
+    background: linear-gradient(90deg, rgba(17, 91, 105, 1) 32%, rgba(40, 116, 129, 1) 66%);
 }
 
 .gradiente-3 {
@@ -88,6 +88,59 @@ html {
 
 .letra-signika {
     font-family: 'Signika Negative', sans-serif;
+}
+
+.letra-tipo {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*=======================================================================================================================================*/
+/*OBERLAY VISUALIZADOR DE IMAGENES*/
+/*=======================================================================================================================================*/
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.625);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+    cursor: pointer;
+}
+
+.overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay-content {
+    position: relative;
+    width: 700px;
+    background-color: #04343C;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.overlay-content h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
 }
 
 /*=======================================================================================================================================*/
@@ -665,7 +718,31 @@ html {
     transition: all .5s;
 }
 
-.my-button:hover {
+.yu-button {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    align-items: center;
+    bottom: 0px;
+    left: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ff6f00;
+    color: white;
+    font-weight: 100;
+    cursor: pointer;
+    overflow: hidden;
+    transform-origin: center;
+    font-weight: 100;
+    transition: all .5s;
+}
+
+.yu-button i {
+    font-size: 15px;
+}
+
+.my-button:hover,
+.yu-button:hover {
     background-color: #ff9000;
 }
 
@@ -678,7 +755,7 @@ html {
 }
 
 .my-button:hover i {
-    animation: shake 3s;
+    animation: shake 2s;
 }
 
 @keyframes shake {
@@ -785,6 +862,28 @@ html {
 /*TABLET HORIZONTAL LG 1024px*/
 /*=======================================================================================================================================*/
 @media (max-width: 1199px) and (min-width: 992px) {
+
+    /*===========================================*/
+    /*OVERLAY VISUALIZADOR DE IMAGENES*/
+    /*===========================================*/
+    .overlay-content {
+        position: relative;
+        width: 700px;
+        background-color: #04343C;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .overlay-content h1 {
+        color: white;
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    /*===========================================*/
+    /*HEADER*/
+    /*===========================================*/
     .pre-header {
         height: 95px;
     }
@@ -1113,6 +1212,24 @@ html {
 /*TABLET VERTICAL MD 768px*/
 /*=======================================================================================================================================*/
 @media (max-width: 991px) and (min-width: 768px) {
+
+    /*===========================================*/
+    /*OVERLAY VISUALIZADOR DE IMAGENES*/
+    /*===========================================*/
+    .overlay-content {
+        position: relative;
+        width: 600px;
+        background-color: #04343C;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .overlay-content h1 {
+        color: white;
+        font-size: 25px;
+        font-weight: 300;
+    }
 
     /*===========================================*/
     /*HEADER*/
@@ -1537,6 +1654,24 @@ html {
 /*MOVIL HORIZONTAL SM 576px*/
 /*=======================================================================================================================================*/
 @media (max-width: 767px) and (min-width: 576px) {
+
+    /*===========================================*/
+    /*OVERLAY VISUALIZADOR DE IMAGENES*/
+    /*===========================================*/
+    .overlay-content {
+        position: relative;
+        width: 500px;
+        background-color: #04343C;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .overlay-content h1 {
+        color: white;
+        font-size: 25px;
+        font-weight: 300;
+    }
 
     /*===========================================*/
     /*HEADER*/
@@ -1969,6 +2104,29 @@ html {
 /*MOVIL VERTICAL 320px*/
 /*=======================================================================================================================================*/
 @media (max-width: 575px) {
+
+    /*===========================================*/
+    /*OVERLAY VISUALIZADOR DE IMAGENES*/
+    /*===========================================*/
+    .overlay-content {
+        position: relative;
+        width: 100%;
+        margin-right: 10px;
+        margin-left: 10px;
+        background-color: #04343C;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .overlay-content h1 {
+        color: white;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .overlay-content .close-btn {
+        display: none;
+    }
 
     /*===========================================*/
     /*HEADER*/
