@@ -22,11 +22,13 @@ $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
         items: 1,
         loop: true,
-        dots: true,
-        autoplay: true, // Activar el autoplay
-        autoplayTimeout: 2000, // Intervalo de 2 segundos
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 4000
     });
 });
+
 
 //=======================================================================================================================================
 //EFECTO SCROLL AUTOMATICO
@@ -134,16 +136,13 @@ window.addEventListener('scroll', function () {
 });
 
 document.getElementById('scrollButton').addEventListener('click', function () {
-    scrollToTop(1000); // Duración del desplazamiento en milisegundos (1 segundo)
-});
-
-function scrollToTop(scrollDuration) {
-    var scrollStep = -window.scrollY / (scrollDuration / 15);
     window.scrollTo({
         top: 0,
-        behavior: 'smooth' // Cambiamos 'instant' a 'smooth' para agregar una animación suave
+        behavior: 'smooth'
     });
-}
+});
+
+
 
 
 

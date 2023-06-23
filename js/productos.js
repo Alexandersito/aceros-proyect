@@ -1233,7 +1233,155 @@ var tablaPortaBandejas = [
 
 ];
 
+//=======================================================================================================================================
+//OTROS PRODUCTOS
+//=======================================================================================================================================
+//===========================================
+//TABLA ENFRIADOR DE BEBIDAS
+//===========================================
+var tablaEnfriadorBebidas = [
+    {
+        id: 1,
+        nombre: "REFRESQUERA",
+        img: "img/img-categorias/otros/enfriador-bebidas/enfriador-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Máquina Refresquera de 2 Tolvas 18 Litros",
+            "Dispensador y surtidor de jugos, refrescos, bebidas",
+            "Práctico, de fácil uso, seguro y de alta productividad",
+            "Rapidez en el enfriado del líquido"
+        ]
+    },
 
+    {
+        id: 2,
+        nombre: "CREMOLADERA",
+        img: "img/img-categorias/otros/enfriador-bebidas/enfriador-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "2 bandejas para sostener los residuos",
+            "Iluminación en la parte superior de la tolva",
+            "2 manijas Pull Up para servir el refresco",
+            "2 Tolvas de 15 litros cada una",
+            "Sistema de cremoladera automático"
+        ]
+    }
+];
+
+//===========================================
+//TABLA COCINAS DULCES
+//===========================================
+var tablaCocinasDulces = [
+    {
+        id: 1,
+        nombre: "WAFLERA",
+        img: "img/img-categorias/otros/cocinas-dulces/cocina-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Waffleras de 1 Plato de 18 cms",
+            "Mangos térmicos con Forma de Resorte",
+            "Interior de Teflón para Evitar que se Pegue el Producto",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "CREPERA",
+        img: "img/img-categorias/otros/cocinas-dulces/cocina-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Ideal para cocinar crepas",
+            "Alto rendimiento",
+            "Incluye base con entrepaño en Acero Inoxidable",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+];
+
+//===========================================
+//TABLA PELADORAS
+//===========================================
+var tablaPeladoras = [
+    {
+        id: 1,
+        nombre: "PELADORA DE PAPAS",
+        img: "img/img-categorias/otros/peladoras/peladora-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Pelador de papas diseñado con avanzada tecnología adecuado para la limpieza y pelado de hortalizas ovales o redondas",
+            "Mandos eléctricos en tensión baja con tele interruptor",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "PELADORA DE POLLOS",
+        img: "img/img-categorias/otros/peladoras/peladora-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Simple manipulación y limpieza",
+            "Fácil desarme de sus piezas para alcanzar una óptima limpieza",
+            "Abertura superior para revisar el óptimo procesado de producto"
+        ]
+    }
+];
+
+//=======================================================================================================================================
+//ACCESORIOS
+//=======================================================================================================================================
+//===========================================
+//TABLA ACCESORIOS A
+//===========================================
+var tablaAccesoriosA = [
+    {
+        id: 1,
+        nombre: "GAMELAS",
+        img: "img/img-categorias/accesorios/accesoriosA/accesorio-1.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Acabado pulido interno y externo",
+            "Superficie lisa y pulida que facilita la limpieza",
+            "Bandeja de servir de alta calidad con 6 compartimientos"
+        ]
+    },
+
+    {
+        id: 2,
+        nombre: "OLLAS IMPORTADAS",
+        img: "img/img-categorias/accesorios/accesoriosA/accesorio-2.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 3,
+        nombre: "DUCTO PARA CHIMENEAS",
+        img: "img/img-categorias/accesorios/accesoriosA/accesorio-3.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "Espesor de plancha 1.20mm",
+            "Diseñado especialmente para la correcta evacuación del humo o del Monóxido de Carbono (CO)",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    },
+
+    {
+        id: 4,
+        nombre: "EXTRACTOR EÓLICO",
+        img: "img/img-categorias/accesorios/accesoriosA/accesorio-4.png",
+        caracteristicas: [
+            "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
+            "El eje que permite el giro está montado sobre rodamientos blindados",
+            "El eje de forma ramificada le otorga una gran resistencia al efecto de centrifugado",
+            "Uniones fijas de soldadura TIG de fino acabado"
+        ]
+    }
+];
 
 
 //=======================================================================================================================================
@@ -1310,6 +1458,18 @@ asignarEventoClick('campanas-btn', tablaCampanas);
 asignarEventoClick('repisas-btn', tablaRepisas);
 asignarEventoClick('porta-bandejas-btn', tablaPortaBandejas);
 
+//===========================================
+//OTROS PRODUCTOS
+//===========================================
+asignarEventoClick('enfriador-bebidas-btn', tablaEnfriadorBebidas);
+asignarEventoClick('cocinas-dulces-btn', tablaCocinasDulces);
+asignarEventoClick('peladoras-btn', tablaPeladoras);
+
+//===========================================
+//ACCESORIOS
+//===========================================
+asignarEventoClick('accesoriosA-btn', tablaAccesoriosA);
+
 
 function mantenerBotonFlecha() {
     const iconElement = document.querySelector('#menu-toggle i');
@@ -1329,6 +1489,10 @@ if (parametro && Number(parametro) === 1) {
     imprimirTabla(tablaExhibidoras);
 } if (parametro && Number(parametro) === 3) {
     imprimirTabla(tablaMesaTrabajoCentral);
+} if (parametro && Number(parametro) === 4) {
+    imprimirTabla(tablaEnfriadorBebidas);
+} if (parametro && Number(parametro) === 5) {
+    imprimirTabla(tablaAccesoriosA);
 }
 
 //===========================================
