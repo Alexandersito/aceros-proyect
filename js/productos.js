@@ -539,7 +539,7 @@ var tablaExhibidoras = [
 
     {
         id: 2,
-        nombre: "EXHIBIDORA VIDRIO CURVO",
+        nombre: "EXHIBIDORA VIDRIO RECTO",
         img: "img/img-categorias/linea-fria/exhibidoras/exhibidora-2.png",
         caracteristicas: [
             "Fabricado en acero inoxidable AISI 304 (Acero quirúrgico)",
@@ -1586,3 +1586,165 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//=======================================================================================================================================
+//BOTON AGREGAR CARRITO
+//=======================================================================================================================================
+document.addEventListener('DOMContentLoaded', function () {
+    //===========================================
+    //Función al darle click al carrito
+    //===========================================
+    function handleButtonClick(event) {
+        const myButton = event.target.closest('.my-button');
+        if (myButton) {
+            const cardContainer = myButton.closest('.cardA');
+            const imgSrc = cardContainer.querySelector('.img-producto').getAttribute('src');
+            const productName = cardContainer.querySelector('.letra-signika').textContent;
+
+            console.log(imgSrc);
+            console.log(productName);
+
+            addToLocalStorage(imgSrc, productName);
+            printProductsFromLocalStorage();
+        }
+    }
+
+    // Agregar un event listener al contenedor padre de los botones
+    const container = document.querySelector('.container__card');
+    container.addEventListener('click', handleButtonClick);
+
+
+
+
+
+    // Función para verificar y establecer el estado del botón al cargar la página
+    function setButtonStateOnLoad() {
+        const buttons = document.querySelectorAll('.my-button');
+        const productData = JSON.parse(localStorage.getItem('productData'));
+
+        buttons.forEach(button => {
+            const productName = button.closest('.cardA').querySelector('.letra-signika').textContent;
+            const existingProduct = productData.find(product => product.name === productName);
+
+            if (existingProduct) {
+                button.style.backgroundColor = '#25D366'; // Cambiar el fondo del botón a verde
+            } else {
+                button.style.backgroundColor = '#ff6f00';
+            }
+        });
+    }
+
+    // Llamada a la función al cargar la página
+    window.addEventListener('load', setButtonStateOnLoad);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //===========================================
+    //Función para crear un local storage
+    //===========================================
+    function createLocalStorage() {
+        if (!localStorage.getItem('productData')) {
+            localStorage.setItem('productData', JSON.stringify([]));
+        }
+    }
+    createLocalStorage();
+
+    //===========================================
+    // Función para agregar datos al local storage
+    //===========================================
+    function addToLocalStorage(imgSrc, productName) {
+        let productData = JSON.parse(localStorage.getItem('productData'));
+
+        // Verificar si el producto ya existe en el local storage
+        const existingProduct = productData.find(product => product.name === productName);
+        if (existingProduct) {
+            console.log(`El producto "${productName}" ya existe en el local storage.`);
+            setButtonStateOnLoad();
+            return; // No se agrega el producto nuevamente
+        }
+
+        let id = 1;
+        if (productData.length > 0) {
+            id = productData[productData.length - 1].id + 1;
+        }
+
+        productData.push({
+            id: id,
+            img: imgSrc,
+            name: productName
+        });
+
+        localStorage.setItem('productData', JSON.stringify(productData));
+        setButtonStateOnLoad();
+    }
+
+    //===========================================
+    //IMPRIMIR EL LOCALSTORAGE EN EL CARRITO
+    //===========================================
+    function printProductsFromLocalStorage() {
+        const productData = JSON.parse(localStorage.getItem('productData'));
+        const tbody = document.querySelector('.cuerpo-carrito');
+
+        // Limpiar contenido anterior de la tabla
+        tbody.innerHTML = '';
+
+        productData.forEach(product => {
+            const { id, img, name } = product;
+
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>${name}</td>
+                <td><img src="${img}" alt="Producto ${id}"></td>
+                <td><button class="delete-button" data-id="${id}"><i class="fas fa-trash"></i></button></td>
+            `;
+
+            tbody.appendChild(tr);
+        });
+
+        // Agregar eventos click a los botones de eliminación
+        const deleteButtons = document.querySelectorAll('.delete-button');
+        deleteButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const productId = parseInt(button.dataset.id);
+                removeFromLocalStorage(productId);
+            });
+        });
+    }
+
+    // Llamar a la función para imprimir los productos desde el localStorage
+    printProductsFromLocalStorage();
+
+    //===========================================
+    //Eliminar producto del local storage
+    //===========================================
+    function removeFromLocalStorage(id) {
+        let productData = JSON.parse(localStorage.getItem('productData'));
+
+        // Filtrar los productos, excluyendo el que tiene el ID especificado
+        productData = productData.filter(product => product.id !== id);
+
+        localStorage.setItem('productData', JSON.stringify(productData));
+        // Volver a imprimir los productos actualizados en el carrito
+        printProductsFromLocalStorage();
+        setButtonStateOnLoad()
+    }
+
+
+
+
+});

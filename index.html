@@ -50,6 +50,8 @@
         rel="stylesheet">
     <!-- SIGMAR -->
     <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <!-- SIGNIKA -->
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
 
     <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -72,14 +74,14 @@
     <!--HEADER-->
     <!--=======================================================================================================================================-->
     <div class="pre-header"></div>
-    <div class="container-fluid header-fixed">
-        <div class="container header-grid" style="background-color: white;
-        border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;
+    <div class="container-fluid header-fixed ">
+        <div class="container header-grid" style="background-color: white;border-bottom: 4px solid #c9c9c9;
+        border-radius: 5px;
         box-shadow: 0 0 10px rgba(55, 55, 55, 0.385);">
 
             <div class="logo">
                 <img class="img-fluid" src="img/logo.png" alt="">
-                <h1 class="text-wrap letra-roboto mt-2">
+                <h1 class="text-wrap letra-signika mt-2" style="font-weight: 900 !important;">
                     <span class="d-block">Super</span>
                     <span class="d-block">Aceros Inox</span>
                 </h1>
@@ -99,9 +101,10 @@
 
                     <button class="letra-lato">Nosotros</button>
 
-                    <button class="letra-lato">
+
+                    <button class="letra-lato open-cart-btn" onclick="mostrarCarrito()">
                         <i class="ri-shopping-cart-line">
-                            <span class="contador-carrito letra-lato">0</span>
+                            <span class="contador-carrito letra-open-sans">0</span>
                         </i>
                     </button>
 
@@ -126,9 +129,6 @@
                 <div class="slider" style="background-image: url(img/slide-2.jpg);border-radius: 10px;">
                 </div>
 
-                <div class="slider" style="background-image: url(img/slide-4.jpg);border-radius: 10px;">
-                </div>
-
                 <div class="slider" style="background-image: url(img/slide-3.jpg);border-radius: 10px;">
                 </div>
 
@@ -141,7 +141,8 @@
     <!--=======================================================================================================================================-->
     <div class="container-fluid  mt-5 seccion-productos ">
 
-        <div class="container gradiente-2 py-4 p-0" style="padding-top: 10px;padding-bottom: 30px;border-radius: 5px;">
+        <div class="container fondoA py-4 p-0"
+            style="padding-top: 10px;padding-bottom: 30px;border-radius: 5px;box-shadow: 0 0 10px rgba(21, 21, 21, 0.666);">
 
             <div class="container-fluid mt-4  ">
                 <div class="container">
@@ -207,19 +208,18 @@
 
         </div>
 
-
-
     </div>
 
     <!--=======================================================================================================================================-->
     <!--EQUIPOS INDUSTRIALES - SECCION-->
     <!--=======================================================================================================================================-->
     <div class="container-fluid mt-5 seccion-equipos-industriales">
-        <div class="container gradiente-2 p-0 py-3" style="padding-top: 10px;padding-bottom: 30px;border-radius: 5px;">
+        <div class="container fondoB p-0 py-3 pb-5"
+            style="padding-top: 10px;padding-bottom: 30px;border-radius: 5px;box-shadow: 0 0 10px rgba(21, 21, 21, 0.666);">
 
             <div class="container-fluid mt-4 ">
                 <div class="container">
-                    <div class="recorte-2 posicion-derecha">
+                    <div class="recorte-2 posicion-derecha" style="background-color: black !important;">
                         <h2 class="letra-sigmar absolute titulo-seccion">Equipos Industriales</h2>
                     </div>
                     <div class="sombra-2 posicion-derecha posicion-derecha-sombra"></div>
@@ -279,9 +279,48 @@
 
     </div>
 
+    <!--=======================================================================================================================================-->
+    <!--CARRITO DE COMPRAS-->
+    <!--=======================================================================================================================================-->
+    <div class="cart oculto">
+        <i class="fas fa-times close-cart-btn" onclick="ocultarCarrito()"></i>
+        <table>
+            <thead>
+                <tr class="letra-lato">
+                    <th>Nombre</th>
+                    <th>Imagen</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="letra-signika cuerpo-carrito">
+                <tr>
+                    <td>COCINA CON 1 HORNILLA</td>
+                    <td><img src="img/img-categorias/linea-caliente/hornos/horno-1.png" alt="Producto 1"></td>
+                    <td><button class="delete-button"><i class="fas fa-trash"></i></button></td>
+                </tr>
+                <tr>
+                    <td>HORNO POLLERO CONVENCIONAL</td>
+                    <td><img src="img/img-categorias/linea-caliente/hornos/horno-3.png" alt="Producto 2"></td>
+                    <td><button class="delete-button"><i class="fas fa-trash"></i></button></td>
+                </tr>
+                <!-- Agrega más filas según sea necesario -->
+            </tbody>
+        </table>
+        <button class="buy-button letra-signika">
+            Cotizar
+            <i class="ri-whatsapp-line"></i>
+        </button>
+    </div>
 
+    <!--=======================================================================================================================================-->
+    <!--FOOTER-->
+    <!--=======================================================================================================================================-->
+    <div class="m-0 p-0"
+        style="width: 100%;height: 300px;background-image: url(img/ola-bottom1.svg);background-repeat: no-repeat;background-size: cover;background-position: center;">
 
-    <div style="height: 1000px;">
+    </div>
+
+    <div style="height: 100px;background-color: #FF6F03;">
 
     </div>
 

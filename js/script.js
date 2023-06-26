@@ -143,8 +143,23 @@ document.getElementById('scrollButton').addEventListener('click', function () {
 });
 
 //=======================================================================================================================================
-//OVERLAY VISUALIZADOR DE IMAGENES
+//MOSTRAR / OCULTAR CARRITO
 //=======================================================================================================================================
+function mostrarCarrito() {
+    // Obtenemos el elemento con la clase 'cart'
+    var cart = $(".cart");
+
+    // Removemos la clase 'oculto' del elemento cart
+    cart.removeClass("oculto");
+}
+
+function ocultarCarrito() {
+    // Agregamos el listener de click al botón con la clase 'close-cart-btn'
+    // Obtenemos el elemento con la clase 'cart'
+    var cart = $(".cart");
+    // Agregamos la clase 'oculto' al elemento cart
+    cart.addClass("oculto");
+}
 
 
 
